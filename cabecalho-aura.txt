@@ -1,0 +1,85 @@
+<style>
+  /* Esconde o botão de favoritos (Hub em inglês e em português) */
+  button[aria-label="Add to Favorites"],
+  button[aria-label="Remove from Favorites"],
+  button[aria-label="Adicionar aos Favoritos"],
+  button[aria-label="Remover dos Favoritos"] {
+    display: none !important;
+  }
+
+  /* Esconde o botão de compartilhar: rótulo, título ou componente, em inglês e português */
+  button[aria-label*="share" i],
+  button[aria-label*="compartilh" i],
+  button[title*="share" i],
+  button[title*="compartilh" i],
+  a[aria-label*="share" i],
+  a[aria-label*="compartilh" i],
+  calcite-button[aria-label*="share" i],
+  calcite-button[aria-label*="compartilh" i],
+  calcite-action[text*="share" i],
+  calcite-action[text*="compartilh" i],
+  calcite-dropdown:has(calcite-button[icon-start="share"]),
+  calcite-button[icon-start="share"],
+  calcite-action[icon="share"],
+  hub-share-button,
+  arcgis-hub-entity-share,
+  [data-test*="share" i],
+  [class*="share-button"],
+  [class*="share-dropdown"],
+  .dropdown:has(> button[aria-label*="share" i]),
+  .dropdown:has(> button[aria-label*="compartilh" i]) {
+    display: none !important;
+  }
+
+  /* Botão de compartilhar flutuante do Hub: o rótulo fica no ícone (svg), não no botão */
+  .hub-tooltip-wrapper:has(svg[aria-label*="compartilh" i]),
+  .hub-tooltip-wrapper:has(svg[aria-label*="share" i]),
+  .hub-tooltip-wrapper:has(use[*|href*="share"]),
+  button:has(> .stacked-icon svg[aria-label*="compartilh" i]),
+  button:has(> .stacked-icon svg[aria-label*="share" i]),
+  button:has(use[*|href*="calcite-share"]) {
+    display: none !important;
+  }
+  /* Esconde o wrapper de tooltip e os botões da barra relacionados */
+  .hub-tooltip-wrapper > button.btn-info {
+    display: none !important;
+  }
+
+  /* Links do cabeçalho */
+  .seteg-nav a:hover,
+  .seteg-nav a:focus {
+    color: #FFFFFF !important;
+    border-color: #6CC24A !important;
+  }
+</style>
+
+<div id="introducao" style="background-color:#071D49; background-image:linear-gradient(115deg, #04102E 0%, #071D49 48%, #1A4282 100%); font-family:'TT Hoves Pro','TT Hoves','Hanken Grotesk','Segoe UI',Arial,sans-serif; color:#FFFFFF; margin:0;">
+  <div style="padding:18px 32px;">
+    <div class="row" style="margin:0;">
+      <div class="col-sm-7" style="padding:0;">
+        <table role="presentation" style="border-collapse:collapse; background-color:transparent; margin:0;">
+          <tr>
+            <td style="padding:0 14px 0 0; vertical-align:middle; background-color:transparent; border:0;">
+              <!-- AURA: URL do símbolo. Suba aura-simbolo-branco.svg na branch main do repositório seteg ou cole aqui outra URL -->
+              <span style="display:inline-block; white-space:nowrap; vertical-align:middle;"><img src="https://github.com/micaelnadas/seteg/blob/main/aura-simbolo-branco.svg?raw=true" alt="" width="34" height="32" style="display:inline-block; width:34px; height:32px; border:0; vertical-align:middle; margin-right:10px;"><span style="display:inline-block; vertical-align:middle;"><span style="display:block; font-size:20px; font-weight:700; line-height:1; letter-spacing:2px; color:#FFFFFF;">AURA</span><span style="display:block; margin-top:4px; font-family:'IBM Plex Mono',Consolas,monospace; font-size:10px; letter-spacing:1px; line-height:1; color:#AFC8F0;">by SETEG</span></span></span>
+            </td>
+            <td style="padding:0 0 0 14px; vertical-align:middle; background-color:transparent; border:0; border-left:1px solid rgba(255,255,255,0.22);">
+              <p style="margin:0; font-size:17px; font-weight:700; line-height:1.2; color:#FFFFFF; letter-spacing:-0.2px;">Modelagem de ruído · Parques eólicos</p>
+              <p style="margin:3px 0 0; font-family:'IBM Plex Mono',Consolas,monospace; font-size:10.5px; letter-spacing:1.5px; text-transform:uppercase; color:#AFC8F0;">Ceará</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-sm-5 hidden-xs seteg-nav" style="padding:0; text-align:right;">
+        <p style="margin:8px 0 0; font-size:14px; line-height:1;">
+          <a href="#introducao" style="display:inline-block; color:#D6E2F5; text-decoration:none; padding:6px 0; margin-left:22px; border-bottom:2px solid transparent;">Introdução</a>
+          <a href="#mapa-interativo" style="display:inline-block; color:#D6E2F5; text-decoration:none; padding:6px 0; margin-left:22px; border-bottom:2px solid transparent;">Mapa interativo</a>
+          <a href="#analise-locacional" style="display:inline-block; color:#D6E2F5; text-decoration:none; padding:6px 0; margin-left:22px; border-bottom:2px solid transparent;">Análise locacional</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div style="font-size:0; line-height:0; height:3px;">
+    <span style="display:inline-block; width:60%; height:3px; background-color:#2C5697;"></span><span style="display:inline-block; width:20%; height:3px; background-color:#6CC24A;"></span><span style="display:inline-block; width:12%; height:3px; background-color:#FBE122;"></span><span style="display:inline-block; width:8%; height:3px; background-color:#FF8200;"></span>
+  </div>
+</div>
